@@ -20,7 +20,7 @@ pipeline {
 		steps{
 		echo "deploy the app"
 		 sh "#!/bin/bash \n" + 
-       		 "echo \"Hello from \$SHELL\""	
+       		 "chmod u+x pythonscript/hello.py"	
 		
 		}
 	}

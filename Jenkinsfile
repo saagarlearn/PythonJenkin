@@ -19,10 +19,9 @@ pipeline {
     stage("deploy"){
 		steps{
 		echo "deploy the app"
-		sh '''#!/bin/bash
-                 chmod u+x pythonscript/hello.py
-                '''		
-		sh 'pythonscript/hello.py'
+		 sh "#!/bin/bash \n" + 
+       		 "echo \"Hello from \$SHELL\""	
+		
 		}
 	}
   }

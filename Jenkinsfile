@@ -19,6 +19,7 @@ pipeline {
     stage("deploy"){
 		steps{
 		echo "deploy the app"
+		sh ./pythonscripts/hello.py
 		}
 	}
   }

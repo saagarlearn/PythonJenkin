@@ -19,10 +19,8 @@
     stage("deploy"){
 		steps{
 		echo "deploy the app"
-		 sh "#!/bin/bash \n" + 
-       		 "chmod u+x pythonscript/hello.py" 
-		 echo "The permission done"
-	         sh './pythonscript/hello.py'		
+		sh 'chmod u+x pythonscript/hello.py'
+			
 		
 		}
 	}

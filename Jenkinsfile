@@ -18,9 +18,8 @@
 
     stage("deploy"){
 		steps{
-		echo "deploy the app"
-		sh 'chmod u+x pythonscript/hello.py'
-		sh """pythonscript/hello.py"""
+		echo "deploy the app"		
+		sh 'pythonscript/hello.py'
 		
 		}
 	}

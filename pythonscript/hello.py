@@ -1,1 +1,1 @@
-print("Welcome to the hell")
+print ('Welcome to the hell')

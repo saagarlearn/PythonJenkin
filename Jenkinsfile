@@ -17,9 +17,11 @@
 
 
     stage("deploy"){
+	     agent {
+     		 label "windows"
+    		 }
 		steps {
-			sh "chmod +x -R ${env.WORKSPACE}"
-			sh 'py pythonscript/hello.py'	
+			bat 'py pythonscript/hello.py'	
 		}
 	}
   }

@@ -1,2 +1,3 @@
-#!/usr/bin/python
+#!/usr/bin/sh
+
 print ("test")

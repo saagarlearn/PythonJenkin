@@ -1,7 +1,7 @@
  pipeline {
   
  agent any
-  
+ agent { docker { image 'python:3.5.1' } }
   stages {
 	stage("build"){
 		steps {
@@ -17,11 +17,8 @@
 
 
     stage("deploy"){
-	     agent {
-     		 label "windows"
-    		 }
 		steps {
-			bat 'py pythonscript/hello.py'	
+			echo "deploy the app"
 		}
 	}
   }

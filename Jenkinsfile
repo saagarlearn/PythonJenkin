@@ -17,11 +17,10 @@
 
 
     stage("deploy"){
-		steps{
-		echo "deploy the app"		
-		sh './pythonscript/hello.py'
-		
-		}
+		steps {
+        		sh "chmod +x -R ${env.WORKSPACE}"
+        		sh '.pythonscript/hello.py'
+    		}
 	}
   }
 }

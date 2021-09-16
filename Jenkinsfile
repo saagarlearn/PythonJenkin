@@ -6,6 +6,11 @@
 		 } 
  }
   stages {
+	 stage("Env Variables"){
+            steps{
+                sh 'printenv'                                                     
+            }
+        }
 	stage("build"){
 		steps {
 		echo "build the app"

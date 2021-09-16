@@ -19,9 +19,9 @@
     stage("deploy"){
 		steps {
         		sh "chmod +x -R ${env.WORKSPACE}"
-        		sh "#!/bin/sh\n" + 
-			 "./pythonscript/hello.py"
-    		}
+        		sh '#!/bin/bash\n'+ 
+			 './pythonscript/hello.py'    		
+		}
 	}
   }
 }

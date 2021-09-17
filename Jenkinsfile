@@ -1,8 +1,9 @@
 pipeline {
     agent { docker { image 'python:3.5.1' } }
     stages {
-        stagse('build') {
+        stage('build') {
             steps {
+                echo 'Yahooo'
                 sh 'python --version'
             }
         }

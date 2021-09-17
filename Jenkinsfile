@@ -4,14 +4,14 @@
   stages {
 	stage("build"){
 		steps {
-		echo "build the app"
+		sh 'echo "build the app"'
 		}
 	}
 
 	stage("test"){
 		steps{
-		echo "test the app"
-	        echo "calling python"
+		sh 'echo "test the app"'
+	        sh 'echo "calling python"'
 	        sh 'python ./pythonscript/hello.py'
 		}
 	}

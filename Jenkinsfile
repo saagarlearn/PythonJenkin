@@ -12,6 +12,7 @@
 		steps{
 		sh 'echo "test the app"'
 	        sh 'echo "calling python"'
+		sh "#!/bin/bash -x"
 	        sh 'python ./pythonscript/hello.py'
 		}
 	}

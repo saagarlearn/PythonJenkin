@@ -11,6 +11,7 @@
 	stage("test"){
 		steps{
 		echo "test the app"
+	        echo "calling python"
 	        sh 'python ./pythonscript/hello.py'
 		}
 	}
